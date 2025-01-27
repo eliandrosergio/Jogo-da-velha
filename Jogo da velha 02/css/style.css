@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Global */
+
+:root {
+    --bs-gray: #afb6bb;
+    --bs-dark: #000000;
+    --bs-white: #ffffff;
+    --bs-header: #0059ff;
+    --bs-background: #c6cdd3;
+}
+
+/* Normal */
+
+body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bs-background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ID */
+
+#cabeca h1, #cabeca h3 {
+    margin: 4px;
+    color: var(--bs-header);
+}
+
+#cabeca h1 {
+    font-size: 50px;
+}
+
+#cabeca h3 {
+    font-size: 24px;
+}
+
+#reiniciarButton {
+    margin: 24px;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 8px;
+    color: var(--bs-dark);
+    background-color: var(--bs-white);
+}
+
+/* Class */
+
+.tabuleiro {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.itemColuna {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-color: var(--bs-gray);
+    border: 2px solid var(--bs-dark);
+}
+
+.x {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/X.png);
+}
+
+.o {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/O.png);
+}
+
+.placar {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.jogadorPlacar {
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+    color: var(--bs-dark);
+}
+
+.pontoPlacar {
+    padding: 0px 15px;
+    margin-left: 10px;
+    border: 2px solid var(--bs-dark);
+}
+
+.jogadorPlacar:nth-child(1) {
+    margin-right: 50px;
+}
+
+.jogadorPlacar:nth-child(2) {
+    margin-left: 50px;
+}
